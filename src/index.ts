@@ -6,11 +6,11 @@ const app = express()
 const port = process.env.PORT || 3000
 
 
-const ffmpeg = await FFmpeg.create({ core: "@ffmpeg.wasm/core-mt" });
+// const ffmpeg = await FFmpeg.create({ core: "@ffmpeg.wasm/core-mt" });
 
 app.get('/', (_req: Request, res: Response) => {
-    const v = ffmpeg.version.core.version
-    return res.send({ message: 'Express Typescript on Vercel', v })
+    // const v = ffmpeg.version.core.version
+    // return res.send({ message: 'Express Typescript on Vercel', v })
 })
 
 app.get('/ping', (_req: Request, res: Response) => {
